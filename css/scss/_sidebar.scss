@@ -39,12 +39,16 @@
     -o-transition: margin .25s ease-out;
     transition: margin .25s ease-out;
     @include media-breakpoint-down(sm) {
-      -webkit-transition: margin .25s ease-out;
-      -moz-transition: margin .25s ease-out;
-      -o-transition: margin .25s ease-out;
-      transition: margin .25s ease-out;
       right: -32px;
     }
+  }
+}
+.toggled{
+  .btn-toggle-sidebar {
+    right: -32px !important;
+  }
+  @include media-breakpoint-down(sm) {
+    right: 0;
   }
 }
 

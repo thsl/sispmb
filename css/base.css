@@ -10116,8 +10116,16 @@ h3 {
 }
 @media (max-width: 767.98px) {
   #sidebar-wrapper .btn-toggle-sidebar {
-    transition: margin 0.25s ease-out;
     right: -32px;
+  }
+}
+
+.toggled .btn-toggle-sidebar {
+  right: -32px !important;
+}
+@media (max-width: 767.98px) {
+  .toggled {
+    right: 0;
   }
 }
 
