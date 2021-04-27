@@ -1,6 +1,6 @@
-@import "../scss/functions";
-@import "../scss/mixins";
-@import "../scss/variables";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 
 .navbar-sispmb {
   background: white url("#{$image-path-theme}/bgtop-sispmb.jpg") repeat-x;

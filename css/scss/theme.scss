@@ -1,0 +1,21 @@
+/* CSS para SISPMB */
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+
+@import "variables";
+@import "mixins";
+
+@import "structure";
+@import "type";
+
+@import "utilities";
+@import "buttons";
+@import "alerts";
+@import "breadcrumb";
+@import "navbar";
+@import "sidebar";
+
+@import "index";
+

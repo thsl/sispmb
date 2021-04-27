@@ -1,18 +1,97 @@
-@import "utilities/align";
-@import "utilities/background";
-@import "utilities/borders";
-@import "utilities/clearfix";
-@import "utilities/display";
-@import "utilities/embed";
-@import "utilities/flex";
-@import "utilities/float";
-@import "utilities/interactions";
-@import "utilities/overflow";
-@import "utilities/position";
-@import "utilities/screenreaders";
-@import "utilities/shadows";
-@import "utilities/sizing";
-@import "utilities/spacing";
-@import "utilities/stretched-link";
-@import "utilities/text";
-@import "utilities/visibility";
+$box-shadow-xs: 0px 8px 12px rgba(20, 46, 82, 0.2);
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-md: 0px 16px 32px rgba(20, 46, 82, 0.2) !default;
+$box-shadow-lg: 0px 32px 30px rgba(20, 46, 82, 0.2) !default;
+
+
+/* Dividers */
+
+.divider-top {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid $gray-700;
+}
+
+.divider-right {
+  margin-right: 1em;
+  padding-right: 1em;
+  border-right: 1px solid $gray-700;
+}
+
+.divider-bottom {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $gray-700;
+}
+
+.divider-left {
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px solid $gray-700;
+}
+
+// ---------------------------------------------------------------
+
+/* Tamanhos de Fontes */
+
+.fontsize-xs {
+  font-size: $fontsize-xs;
+}
+
+.fontsize-sm {
+  font-size: $fontsize-sm;
+}
+
+.fontsize-md {
+  font-size: $fontsize-md;
+}
+
+.fontsize-mdplus {
+  font-size: $fontsize-mdplus;
+}
+
+.fontsize-lg {
+  font-size: $fontsize-lg;
+}
+
+.fontsize-xl {
+  font-size: $fontsize-xl;
+}
+
+.fontsize-xxl {
+  font-size: $fontsize-xxl;
+}
+
+.fontsize-2xl {
+  font-size: $fontsize-2xl;
+}
+
+.fontsize-3xl {
+  font-size: $fontsize-3xl;
+}
+
+// sombras
+
+.shadow-xs {
+  @include box_shadow(xs);
+}
+
+.shadow-sm {
+  @include box_shadow(sm);
+}
+
+.shadow-md {
+  @include box_shadow(md);
+}
+
+.shadow-lg {
+  @include box_shadow(lg);
+}
+
+.shadow-xg {
+  @include box_shadow(xg);
+}
+
+.shadow-xxl {
+  @include box_shadow(xxg);
+}

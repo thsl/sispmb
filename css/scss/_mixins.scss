@@ -1,47 +1,17 @@
-// Toggles
-//
-// Used in conjunction with global variables to enable certain theme features.
+// sombras
+@mixin box_shadow ($level) {
+  @if $level == xs {
+    box-shadow: 0px 2px 4px rgba(20, 46, 82, 0.2)
+  } @else if $level == sm {
+    box-shadow: 0px 4px 8px rgba(20, 46, 82, 0.2);
+  } @else if $level == md {
+    box-shadow: 0px 8px 12px rgba(20, 46, 82, 0.2);
+  } @else if $level == lg {
+    box-shadow: 0px 16px 32px rgba(20, 46, 82, 0.2);
+  } @else if $level == xl {
+    box-shadow: 0px 32px 30px rgba(20, 46, 82, 0.2);
+  }@else if $level == xxl {
+    box-shadow: 0px 64px 40px rgba(20, 46, 82, 0.2);
+  }
 
-// Vendor
-@import "vendor/rfs";
-
-// Deprecate
-@import "mixins/deprecate";
-
-// Utilities
-@import "mixins/breakpoints";
-@import "mixins/hover";
-@import "mixins/image";
-@import "mixins/badge";
-@import "mixins/resize";
-@import "mixins/screen-reader";
-@import "mixins/size";
-@import "mixins/reset-text";
-@import "mixins/text-emphasis";
-@import "mixins/text-hide";
-@import "mixins/text-truncate";
-@import "mixins/visibility";
-
-// Components
-@import "mixins/alert";
-@import "mixins/buttons";
-@import "mixins/caret";
-@import "mixins/pagination";
-@import "mixins/lists";
-@import "mixins/list-group";
-@import "mixins/nav-divider";
-@import "mixins/forms";
-@import "mixins/table-row";
-
-// Skins
-@import "mixins/background-variant";
-@import "mixins/border-radius";
-@import "mixins/box-shadow";
-@import "mixins/gradients";
-@import "mixins/transition";
-
-// Layout
-@import "mixins/clearfix";
-@import "mixins/grid-framework";
-@import "mixins/grid";
-@import "mixins/float";
+}
